@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary p-2">
-  <div class="container-fluid d-flex justify-content-between align-items-center text-white">
-    <a href="#" class="text-white d-flex align-items-center text-decoration-none">
-      <img src="src/img/ex_logo.png" alt="ex_logo" width="60" class="me-4">
-      <h2 class="h2">ExBD</h2>
+  <div class="d-flex justify-content-between align-items-center text-white">
+    <a href="#" class="text-white d-flex align-items-center text-decoration-none ms-3 me-4">
+      <img src="src/img/ex_logo.png" alt="ex_logo" height="50">
+      <h2 class="h2 m-0 align-middle">ExBD</h2>
     </a>
     <button class="navbar-toggler bg-white color-edge" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
