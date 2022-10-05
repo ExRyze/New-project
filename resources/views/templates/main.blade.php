@@ -12,8 +12,7 @@
 </head>
 <body>
   @include('components.nav')
-  
-  <div class="container-fluid">
+  <div class="col-12 p-3 bg-secondary d-flex">
     @yield('container')
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
