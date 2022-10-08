@@ -6,13 +6,15 @@
       </nav>
       <section class="card-body">
         <ul>
-
+          @foreach ($listAnime as $anime)
+            <li>{{ $anime->title }}</li>
+          @endforeach
         </ul>
       </section>
     </main>
     <aside class="col-4 bg-warning card">
       <form action="">
-        
+
       </form>
     </aside>
 @endsection

@@ -20,7 +20,7 @@ class Animes extends Migration
             $table->string('type')->nullable(); // foreign from table type
             $table->date('started_airing')->nullable();
             $table->date('finished_airing')->nullable();
-            $table->enum('status', ['']); // fill the enum
+            $table->enum('status', [''])->nullable(); // fill the enum
             $table->timestamps();
         });
     }

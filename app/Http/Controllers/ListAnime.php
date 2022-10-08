@@ -14,7 +14,10 @@ class ListAnime extends Controller
      */
     public function index()
     {
-        return view('list');
+        return view('list', [
+        'listAnime' => animes::all()
+        ]);
+        // dd(animes::all());
     }
 
     /**
