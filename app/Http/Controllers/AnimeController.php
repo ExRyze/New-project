@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\animes;
-use Illuminate\Http\Request;
+use App\Models\Anime;
+use App\Http\Requests\StoreAnimeRequest;
+use App\Http\Requests\UpdateAnimeRequest;
 
-class ListAnime extends Controller
+class AnimeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +16,8 @@ class ListAnime extends Controller
     public function index()
     {
         return view('list', [
-        'listAnime' => animes::all()
+            'listAnime' => Anime::all()
         ]);
-        // dd(animes::all());
     }
 
     /**
@@ -33,10 +33,10 @@ class ListAnime extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreAnimeRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreAnimeRequest $request)
     {
         //
     }
@@ -44,10 +44,10 @@ class ListAnime extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\animes  $animes
+     * @param  \App\Models\Anime  $anime
      * @return \Illuminate\Http\Response
      */
-    public function show(animes $animes)
+    public function show(Anime $anime)
     {
         //
     }
@@ -55,10 +55,10 @@ class ListAnime extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\animes  $animes
+     * @param  \App\Models\Anime  $anime
      * @return \Illuminate\Http\Response
      */
-    public function edit(animes $animes)
+    public function edit(Anime $anime)
     {
         //
     }
@@ -66,11 +66,11 @@ class ListAnime extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\animes  $animes
+     * @param  \App\Http\Requests\UpdateAnimeRequest  $request
+     * @param  \App\Models\Anime  $anime
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, animes $animes)
+    public function update(UpdateAnimeRequest $request, Anime $anime)
     {
         //
     }
@@ -78,10 +78,10 @@ class ListAnime extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\animes  $animes
+     * @param  \App\Models\Anime  $anime
      * @return \Illuminate\Http\Response
      */
-    public function destroy(animes $animes)
+    public function destroy(Anime $anime)
     {
         //
     }

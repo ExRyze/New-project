@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ListAnime;
-
+use App\Http\Controllers\AnimeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,4 +15,4 @@ use App\Http\Controllers\ListAnime;
 
 Route::get('/', function () {return view('home');});
 Route::get('/home', function () {return view('home');});
-Route::get('/list', [ListAnime::class, 'index']);
+Route::get('/list', [AnimeController::class, 'index']);
