@@ -17,4 +17,6 @@ Route::view('/', 'home');
 Route::view('/home', 'home');
 Route::controller(AnimeController::class)->group(function() {
   Route::get('/anime', 'index');
+  Route::get('/anime/create', 'create');
+  Route::post('/anime', 'store');
 });

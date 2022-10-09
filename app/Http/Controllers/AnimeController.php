@@ -27,7 +27,7 @@ class AnimeController extends Controller
      */
     public function create()
     {
-        //
+        return view('anime.create');
     }
 
     /**
@@ -38,7 +38,11 @@ class AnimeController extends Controller
      */
     public function store(StoreAnimeRequest $request)
     {
-        //
+        Anime::create($request->validate([
+            'title' => 'required|max:255',
+            'episodes' => 'required|max:11'
+        ]));
+        return redirect('/anime');
     }
 
     /**
