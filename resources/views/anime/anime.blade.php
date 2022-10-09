@@ -6,7 +6,7 @@
       </nav>
       <section class="card-body">
         <ul>
-          @foreach ($listAnime as $anime)
+          @foreach ($Animes as $anime)
             <li>{{ $anime->title }}</li>
           @endforeach
         </ul>

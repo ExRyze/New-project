@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="/list" class="nav-link text-white text-decoration-none">List</a>
+          <a href="/anime" class="nav-link text-white text-decoration-none">List</a>
         </li>
       </ul>
     </div>

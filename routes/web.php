@@ -15,4 +15,4 @@ use App\Http\Controllers\AnimeController;
 
 Route::get('/', function () {return view('home');});
 Route::get('/home', function () {return view('home');});
-Route::get('/list', [AnimeController::class, 'index']);
+Route::get('/anime', [AnimeController::class, 'index']);

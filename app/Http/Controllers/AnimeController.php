@@ -15,8 +15,8 @@ class AnimeController extends Controller
      */
     public function index()
     {
-        return view('list', [
-            'listAnime' => Anime::all()
+        return view('anime.anime', [
+            'Animes' => Anime::all()
         ]);
     }
 
