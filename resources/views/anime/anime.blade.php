@@ -13,8 +13,6 @@
       </section>
     </main>
     <aside class="col-4 bg-warning card">
-      <form action="">
-
-      </form>
+      <a href="/anime/create">Create</a>
     </aside>
 @endsection

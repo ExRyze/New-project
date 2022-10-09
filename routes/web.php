@@ -13,6 +13,8 @@ use App\Http\Controllers\AnimeController;
 |
 */
 
-Route::get('/', function () {return view('home');});
-Route::get('/home', function () {return view('home');});
-Route::get('/anime', [AnimeController::class, 'index']);
+Route::view('/', 'home');
+Route::view('/home', 'home');
+Route::controller(AnimeController::class)->group(function() {
+  Route::get('/anime', 'index');
+});
